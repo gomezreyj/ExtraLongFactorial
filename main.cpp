@@ -106,7 +106,7 @@ int main()
     
     int factorialOf = 45;
 
-    for ( factorialOf > 1; factorialOf--; )
+    for ( int i = factorialOf; i > 1; i--)
     {
         result = resultMult(result,readNums(factorialOf));
     }
@@ -116,7 +116,7 @@ int main()
           cont--;
 
     cout << "Factorial of : " <<  factorialOf << endl;
-         
+
     while ( cont >= 0 )
       cout << result[cont--];
     
