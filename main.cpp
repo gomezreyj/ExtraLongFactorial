@@ -103,16 +103,20 @@ int main()
     vector<int> num1, num2, num3, num4, result;
 
     result = readNums(1);
+    
+    int factorialOf = 45;
 
-    for ( int i = 45; i > 1; i--)
+    for ( factorialOf > 1; factorialOf--; )
     {
-        result = resultMult(result,readNums(i));
+        result = resultMult(result,readNums(factorialOf));
     }
     int cont = result.size() - 1;
 
     while ( result[cont] == 0)
           cont--;
 
+    cout << "Factorial of : " <<  factorialOf << endl;
+         
     while ( cont >= 0 )
       cout << result[cont--];
     
