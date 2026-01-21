@@ -115,7 +115,7 @@ int main()
     while ( result[cont] == 0)
           cont--;
 
-    cout << "Factorial of : " <<  factorialOf << endl;
+    cout << "Factorial of : " <<  factorialOf <<  "is " << endl;
 
     while ( cont >= 0 )
       cout << result[cont--];
